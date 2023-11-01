@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+/* Add this to your existing CSS stylesheet */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    /* Adding a background color transition */
+}
+
+header:hover {
+    background-color: rgba(255, 255, 255, 0.95);
+    /* Lighten the background color on hover */
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+    transition: transform 0.3s ease;
+    /* Adding a logo scale transition */
+}
+
+header:hover .logo {
+    transform: scale(1.1);
+    /* Enlarge the logo on header hover */
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+/* Add this to your existing CSS stylesheet */
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease, cursor 0.3s ease;
+    /* Adding transitions for color, transform, and cursor */
+    cursor: pointer;
+}
+
+header ul li a:hover {
+    color: #0f8b57;
+    /* Change the color on hover */
+    transform: translateY(-3px);
+    /* Add a small vertical movement on hover */
+    cursor: grab;
+    /* Change cursor style on hover */
+}
+
+.content 
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.content .textBox 
+{
+    position: relative;
+    max-width: 700px;
+    justify-content:baseline;
+    margin-top: 100px;
+    margin-left: 140px;
+}
+
+.content .textBox h2 
+{
+    color: #333;
+    font-size: 4.5em;
+    line-height: 1.4em;
+    font-weight: 500;
+    
+}
+
+
+.content .textBox h2 span
+{
+    color:  #0f8b57;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p
+{
+    color: #435244;
+    font-size:0.5cm;
+}
+
+.content .textBox a
+{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(42, 202, 42);
+    color: #fff;
+    border-radius: 70px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+
+}
+
+
+.content .imagBox 
+{
+    width: 600px;
+    display:grid;
+    justify-content: flex-end;
+    padding-right: 120px;
+    padding-top: 50px;
+    margin-top: 190px;
+}
+
+
+.content .imagBox img
+{
+    max-width: 340px;
+}
+
+
+.thumb 
+{
+    position: absolute;
+    left: 50%;
+    bottom:20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li 
+{
+    list-style: none;
+    display: inline-block;
+    margin: 25px;
+    cursor:pointer;
+    transition: 0.49s;
+}
+
+
+.thumb li:hover
+{
+    transform: translateY(-24px);
+}
+
+.thumb li img
+{
+    max-width: 75px;
+
+}
+
+.sci
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sci li 
+{
+    list-style: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.sci li a
+{
+    display: inline-block;
+    margin: 5px;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+.sci li:hover
+{
+    transform:translateX(4.4px);
+}
+
+.circle
+{
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    background: #1d9663;
+    clip-path: circle(600px at right 800px);
+}
